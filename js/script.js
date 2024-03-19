@@ -7,37 +7,13 @@ const ArrivalBox = document.querySelector(".new-products .products-items");
 const bannerTopBox = document.querySelector(".blog .top-box");
 const bannerBttomBox = document.querySelector(".blog .bottom-box");
 
-
-console.log(openNav, closeNav, navs)
+//open and close navbar
 openNav.addEventListener("click", function() {
     navs.style.transform = "translateX(0px)"
-    // navs.classList.toggle("animate-wiggleOpen")
 })
-
 closeNav.addEventListener("click", function() {
     navs.style.transform = "translateX(100%)"
-    // navs.classList.toggle("animate-wiggleClose")
 })
-
-
-
-
-//function to dis play features
-function displayFeature (data){
-    let feature = ''
-    data.map(item => {
-        feature += `
-        <div id="${item.id}" class="content m-auto shadow-md hover:shadow-lg transition ease-in-out delay-200 rounded border border-solid border-gray-200 p-4">
-            <img src="${item.image}" alt="${item.name}">
-            <h4 class="capitalize font-medium pb-1 pt-1.5 text-dim-900 mt-3 bg-[#fddde4] rounded">${item.name}</h4>
-        </div>
-        `
-    })
-    featureBox.innerHTML = feature
-}
-
-displayFeature(featureData)
-
 
 
 //function to display products in page
@@ -100,9 +76,24 @@ function dsiplayArrival(data) {
 dsiplayArrival(arrivalData) 
 
 
+//function to display features
+function displayFeature (data){
+    let feature = ''
+    data.map(item => {
+        feature += `
+        <div id="${item.id}" class="content m-auto shadow-md hover:shadow-lg transition ease-in-out delay-200 rounded border border-solid border-gray-200 p-4">
+            <img src="${item.image}" alt="${item.name}">
+            <h4 class="capitalize font-medium pb-1 pt-1.5 text-dim-900 mt-3 bg-[#fddde4] rounded">${item.name}</h4>
+        </div>
+        `
+    })
+    featureBox.innerHTML = feature
+}
+
+displayFeature(featureData)
 
 
-
+//function to display features
 function displayTopBlog(data) {
     let banners = ''
     data.map(item => {

@@ -102,7 +102,7 @@ const productsData = [
 
 const arrivalData = [
     {
-        id: 1,
+        id: 9,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n1.jpg',
         brand: 'adidas',
@@ -110,7 +110,7 @@ const arrivalData = [
         price: 66,
     },
     {
-        id: 2,
+        id: 10,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n2.jpg',
         brand: 'adidas',
@@ -118,7 +118,7 @@ const arrivalData = [
         price: 88,
     },
     {
-        id: 3,
+        id: 11,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n3.jpg',
         brand: 'adidas',
@@ -126,7 +126,7 @@ const arrivalData = [
         price: 100,
     },
     {
-        id: 4,
+        id: 12,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n4.jpg',
         brand: 'adidas',
@@ -134,7 +134,7 @@ const arrivalData = [
         price: 50,
     },
     {
-        id: 5,
+        id: 13,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n5.jpg',
         brand: 'adidas',
@@ -142,7 +142,7 @@ const arrivalData = [
         price: 78,
     },
     {
-        id: 6,
+        id: 14,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n6.jpg',
         brand: 'adidas',
@@ -150,7 +150,7 @@ const arrivalData = [
         price: 60,
     },
     {
-        id: 7,
+        id: 15,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n7.jpg',
         brand: 'adidas',
@@ -158,7 +158,7 @@ const arrivalData = [
         price: 88,
     },
     {
-        id: 8,
+        id: 16,
         name: 'cartoon astronaut t-shirt',
         image: 'images/products/n8.jpg',
         brand: 'adidas',
@@ -207,5 +207,44 @@ const bannersBottomData = [
         image: 'images/banners/b18.jpg',
         desc: 'new trendy prints',
     },
+]
+
+
+const blogsData = [
+    {
+        id: 1,
+        name: 'The Cotton-Jersey Zip-Up Hoodie',
+        image: 'images/blog/b1.jpg',
+        desc: 'Kickstarter man braid godard calaring book. Raclette waistcoat selfies yr woll chartreuse hexagon irony. godord',
+        more: 'continue reading',
+    },
+    {
+        id: 2,
+        name: 'How To style A Quiff',
+        image: 'images/blog/b2.jpg',
+        desc: 'Kickstarter man braid godard calaring book. Raclette waistcoat selfies yr woll chartreuse hexagon irony. godord',
+        more: 'continue reading',
+    },
+    {
+        id: 3,
+        name: 'Must-have Skater Girl Items',
+        image: 'images/blog/b3.jpg',
+        desc: 'Kickstarter man braid godard calaring book. Raclette waistcoat selfies yr woll chartreuse hexagon irony. godord',
+        more: 'continue reading',
+    },
+    {
+        id: 4,
+        name: 'Runway-Inspired Trends',
+        image: 'images/blog/b4.jpg',
+        desc: 'Kickstarter man braid godard calaring book. Raclette waistcoat selfies yr woll chartreuse hexagon irony. godord',
+        more: 'continue reading',
+    },
+    {
+        id: 5,
+        name: 'The Cotton-Jersey Zip-Up Hoodie',
+        image: 'images/blog/b5.jpg',
+        desc: 'Kickstarter man braid godard calaring book. Raclette waistcoat selfies yr woll chartreuse hexagon irony. godord',
+        more: 'continue reading',
+    }
 ]
 

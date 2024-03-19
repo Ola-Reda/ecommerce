@@ -694,6 +694,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -704,10 +708,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
 }
 
 .flex{
@@ -890,6 +890,11 @@ video {
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fddde4\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 221 228 / var(--tw-bg-opacity));
+}
+
 .bg-dim-900{
   --tw-bg-opacity: 1;
   background-color: rgb(8 129 120 / var(--tw-bg-opacity));
@@ -903,11 +908,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fddde4\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 221 228 / var(--tw-bg-opacity));
 }
 
 .p-3{
@@ -963,6 +963,10 @@ video {
   padding-bottom: 1px;
 }
 
+.pb-1{
+  padding-bottom: 0.25rem;
+}
+
 .pb-14{
   padding-bottom: 3.5rem;
 }
@@ -977,6 +981,14 @@ video {
 
 .pl-8{
   padding-left: 2rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pt-1\.5{
+  padding-top: 0.375rem;
 }
 
 .pt-10{
@@ -995,16 +1007,8 @@ video {
   padding-top: 1.25rem;
 }
 
-.pb-1{
-  padding-bottom: 0.25rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-1\.5{
-  padding-top: 0.375rem;
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .text-center{
@@ -1015,6 +1019,11 @@ video {
   font-family: League Spartan, sans-serif;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1022,11 +1031,6 @@ video {
 
 .text-5xl{
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1042,11 +1046,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -1258,7 +1257,31 @@ main button {
   background-position: center;
   background-position: 20% 30%;
   background-repeat: no-repeat;
-  /* height: 30vh; */
+}
+
+/***************shop page*****************/
+
+.home-shop {
+  background-image: url(../images/banners/b1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+/***************blog page*****************/
+
+.home-blog {
+  background-image: url(../images/banners/b19.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+
+/***************about page - contact page*****************/
+
+.home-about, .home-contact {
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  height: 40vh;
 }
 
 .hover\:border-dim-900:hover{
@@ -1385,17 +1408,15 @@ main button {
 }
 
 @media (min-width: 1024px){
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-\[1fr_200px_200px_1fr\]{
     grid-template-columns: 1fr 200px 200px 1fr;
-  }
-}
-
-@media (min-width: 1280px){
-  .xl\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
