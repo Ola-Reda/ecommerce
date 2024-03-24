@@ -25,7 +25,7 @@ function dsiplayproducts(data) {
     let products = ''
     data.map(item => {
         products += `
-        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow" id="${item.id}">
+        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow hover:scale-95 transition delay-200 ease-in-out duration-500" id="${item.id}">
             <img class="rounded-2xl" src="${item.image}" alt="${item.name}">
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
@@ -55,7 +55,7 @@ function dsiplayArrival(data) {
     let products = ''
     data.map(item => {
         products += `
-        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow" id="${item.id}">
+        <div class="p-3 product border border-solid border-gray-200 rounded-2xl shadow hover:scale-95 transition delay-200 duration-500 ease-in-out" id="${item.id}">
             <img class="rounded-2xl" src="${item.image}" alt="${item.name}">
             <div class="mt-4">
                 <span class="text-[#979595]">${item.brand}</span>
@@ -81,7 +81,7 @@ function displayFeature (data){
     let feature = ''
     data.map(item => {
         feature += `
-        <div id="${item.id}" class="content m-auto shadow-md hover:shadow-lg transition ease-in-out delay-200 rounded border border-solid border-gray-200 p-4">
+        <div id="${item.id}" class="content m-auto shadow-md hover:shadow-lg transition ease-in-out delay-200 duration-500 rounded border border-solid border-gray-200 p-4">
             <img src="${item.image}" alt="${item.name}">
             <h4 class="capitalize font-medium pb-1 pt-1.5 text-dim-900 mt-3 bg-[#fddde4] rounded">${item.name}</h4>
         </div>
@@ -98,7 +98,7 @@ function displayTopBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} flex items-center text-white min-w-[500px] h-[400px]">
+            <div class="${item.id} flex items-center text-white min-w-[500px] h-[400px] hover:brightness-50 transition ease-in-out delay-150 duration-500">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-10">
                     <span class="font-extralight text-[26px]">${item.name}</span>
@@ -118,7 +118,7 @@ function displayBottomBlog(data) {
     let banners = ''
     data.map(item => {
         banners += `
-            <div class="${item.id} flex items-center text-white">
+            <div class="${item.id} flex items-center text-white hover:brightness-50 transition ease-in-out delay-150 duration-500">
                 <img src="${item.image}" alt="${item.name}" class="w-full h-full">
                 <div class="absolute pl-8 leading-8">
                     <span class="font-bold uppercase text-[26px]">${item.name}</span>

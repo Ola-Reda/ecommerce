@@ -13,6 +13,10 @@
     .link {
         @apply text-[#404442] hover:text-dim-900
     }
+
+    .line {
+        @apply after:content-[''] after:bg-black after:absolute after:w-16	after:h-0.5 after:ml-2 after:mt-2.5 hover:after:ml-3 after:transition after:delay-200 after:ease-in-out after:duration-500;
+    }
 }
 
 @layer utilities {
