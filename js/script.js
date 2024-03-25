@@ -1,19 +1,8 @@
-const openNav = document.querySelector(".open")
-const closeNav = document.querySelector(".close")
-const navs = document.querySelector('.navs')
 const featureBox = document.querySelector(".feature-box");
 const producteBox = document.querySelector(".products-items");
 const ArrivalBox = document.querySelector(".new-products .products-items");
 const bannerTopBox = document.querySelector(".blog .top-box");
 const bannerBttomBox = document.querySelector(".blog .bottom-box");
-
-//open and close navbar
-openNav.addEventListener("click", function() {
-    navs.style.transform = "translateX(0px)"
-})
-closeNav.addEventListener("click", function() {
-    navs.style.transform = "translateX(100%)"
-})
 
 
 //function to display products in page
