@@ -82,7 +82,7 @@ function displayFeature (data){
 displayFeature(featureData)
 
 
-//function to display features
+//function to display banners
 function displayTopBlog(data) {
     let banners = ''
     data.map(item => {
